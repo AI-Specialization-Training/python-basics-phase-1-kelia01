@@ -19,3 +19,12 @@
 
 # >>>>>>>>>>>>>
 # ============================================================================
+
+def number_pattern(n):
+
+    if not isinstance(n, int):
+        raise TypeError("Argument must be an integer value")
+    elif n < 1:
+        raise ValueError("Argument must be an integer greater than 0")
+    for i in range(1, n + 1):
+        print(i, sep=' ')
